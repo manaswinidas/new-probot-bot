@@ -22,6 +22,13 @@ export default (app) => {
     return context.octokit.pulls.requestReviewers(params);
   });
 
+  app.on("pull_request_review.submitted", async (context) => {
+    if (context.payload.review.state === "approved") {
+      const labelsParam = context.issue({ labels: ["approved"] });
+      return context.octokit.issues.addLabels(labelsParam);
+    }
+  });
+
   // For more information on building apps:
   // https://probot.github.io/docs/
 
