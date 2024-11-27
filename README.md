@@ -1,6 +1,6 @@
-# first-probot-app
+# Probot app
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
+> A GitHub App built with [Probot](https://github.com/probot/probot). This repository was built as part of a LinkedIn Learning course on [Building GitHub Bots](https://www.linkedin.com/learning/building-github-bots/). Please refer to the [Build a GitHub bot using Probot](https://www.linkedin.com/learning/building-github-bots/what-is-probot) section to learn more about how this was built and deployed on a cloud application hosting platform called [Render](https://render.com/).
 
 ## Setup
 
